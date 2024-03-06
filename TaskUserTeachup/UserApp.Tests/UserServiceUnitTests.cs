@@ -30,7 +30,7 @@ namespace UserApp.Tests
 
             _mapper = new Mock<IMapper>().Object;
 
-            _userHistoryService = new UserHistoryService(_iLoginHistoryRepository.Object, _mapper);
+            //_userHistoryService = new UserHistoryService(_iLoginHistoryRepository.Object, _mapper);
 
             _userService = new UserService(_userRepository.Object, _mapper, _userHistoryService);
         }
